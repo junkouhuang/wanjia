@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>东莞市万珈电子科技有限公司</title>
+		<link rel="icon" type="image/x-icon" href="img/icon/wanjia.ico"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<!-- bootstrap css -->
+		<link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.css">
+		<!-- wanjia css -->
+		<link rel="stylesheet/less" href="css/wanjia.less"  type="text/css"/>
+		<!-- less js -->
+		<script type="text/javascript" src="js/less.js" ></script>
+    	<!-- iconfont css -->
+    	<link rel="stylesheet" href="iconfont/iconfont.css"  type="text/css" />
+		<!--[if It IE 9]>
+	    <meta http-equiv="Refresh" content="0;url=ie.html" />
+	    <![endif]-->
+	</head>
+	<body>
+		
+		
+		<div class="language-area pc">
+			<div class="container">
+				<span  onclick="translated(0)"><img src="img/icon/lang_en.png"/>English</span>
+				<span  onclick="translated(1)"><img src="img/icon/lang_cn.png"/>中文</span>
+			</div>
+		</div>
+		
+		
+		<nav class="navbar navbar-default mobile" role="navigation">
+			<div class="container-fluid"> 
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+						<span class="sr-only">切换导航</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand " href="#"><img src="img/icon/wj-mobile.png"/></a>
+				</div>
+				<div class="collapse navbar-collapse" id="example-navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">网站首页</a><span></span></li>
+						<li><a href="about.html">走进万珈</a><span></span></li>
+						<li><a href="product.html">产品中心</a><span></span></li>
+						<li><a href="quality.html">品质保证</a><span></span></li>
+						<li><a href="workspace.html">车间一览</a><span></span></li>
+						<li><a href="customer.html">合作客户</a><span></span></li>
+						<li><a href="culture.html">文化生活</a><span></span></li>
+						<li><a href="invite.html">人力资源</a><span></span></li>
+						<li><a href="contact.html"  class="active">联系我们</a><span></span></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+
+		<div class="wj-header pc">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+						<a href="index.html"><img src="img/icon/wj-pc.png" /></a>
+					</div>
+					
+					<div  class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+						<span>
+							0769-89287196
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="wj-nav-p pc">
+			<div class="container">
+				<ul class="nav nav-pills nav-justified">
+					<li><a href="index.html">首页</a><span></span></li>
+					<li><a href="about.html">关于我们</a><span></span></li>
+					<li   class="active"><a href="product.html">产品中心</a><span></span></li>
+					<li><a href="quality.html">品质保证</a><span></span></li>
+					<li><a href="workspace.html">车间一览</a><span></span></li>
+					<li><a href="customer.html">合作客户</a><span></span></li>
+					<li><a href="culture.html">文化生活</a><span></span></li>
+					<li><a href="invite.html">人力资源</a><span></span></li>
+					<li><a href="contact.html">联系我们</a><span></span></li>
+				</ul>
+			</div>
+		</div>
+		
+		
+		<div class="wj-product-wj">
+			<div class="wj-product-wj-img pc">
+				<img src="img/product/product_pc.jpg" />
+				<span>万珈产品 ，品质保证</span>
+			</div>
+			
+			
+			<div  class="wj-product-wj-content">
+				<div class="container containerpadding">
+					<!-- 大分类 start-->
+					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 classify  " id="mainClassify">
+						<div class="title">产品介绍</div>
+						<ul>
+							<li class="active ">HARNESS<i class="iconfont icon-shouzhi" aria-hidden="true"></i></li>
+							<li class=" ">车插<i class="iconfont icon-shouzhi" aria-hidden="true"></i></li>
+							<li class=" ">数据线<i class="iconfont icon-shouzhi" aria-hidden="true"></i></li>
+							<li class=" ">信号线<i class="iconfont icon-shouzhi" aria-hidden="true"></i></li>
+						</ul>
+					</div>
+					<!-- 大分类end -->
+					<div class="col-xs-12 col-sm-9 col-sm-9 col-md-9 col-lg-9 " >
+						<div class="row  wj-product-p"  id="detailClassify"></div>
+						<!-- 小分类 start-->
+						<div class="row wj-product-row" id="productList"></div>
+						<!-- 小分类end -->
+						<!-- 小分类对应的产品列表start -->
+						<div id="page"></div>
+						<!-- 小分类对应的产品列表end -->
+					</div>
+
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		<!-- menu area -->
+	    <div class="wj-right-menu pc">
+	    	<ul>
+	    		<li>
+	    			<i class="iconfont icon-qq " aria-hidden="true" title=""></i>
+	    			317003045
+	    		</li>
+	    		<li>
+	    			<i class="iconfont icon-dianhua" aria-hidden="true" title=""></i>
+	    			0769-89287196
+	    		</li>
+	    		<li>
+	    			<i class="iconfont icon-weixin" aria-hidden="true" title=""></i>
+	    			135 8083 8722
+	    		</li>
+	    		<li  id="zhiding">
+	    			<i class="iconfont icon-dingbu" aria-hidden="true" title=""></i>
+	    		</li>
+	    	</ul>
+	    </div>
+	    <!-- ## menu area end ## -->
+		
+		
+		
+		<div class="wj-foot-p pc">
+			<div class="container wj-foot-p-top">
+				<div class="row ">
+					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 phone">
+						<p>全国统一服务热线：</p>
+						<span>0769-89287196</span>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 address">
+						<p>公司地址：</p>
+						<span>中国广东省东莞市塘厦镇莲湖伟业路22号A栋</span>
+					</div>
+					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 email">
+						<p>发送邮箱：</p>
+						<span>Jenny1892@163.com</span>
+					</div>
+				</div>
+			</div>
+			<div class="wj-ba">Copyright ©  东莞市万珈电子科技有限公司   All Rights Reserved<a href="http://www.miitbeian.gov.cn" target="_blank">粤ICP备19013878号-1</a></div>
+		</div>
+		
+		
+		
+		<div class="wj-foot-m mobile" >
+			<div class="wj-ba">
+				<p>Copyright © 东莞市万珈电子科技有限公司</p>
+				<p>All Rights Reserved</p>
+				<a href="http://www.miitbeian.gov.cn" target="_blank">粤ICP备19013878号-1</a>
+			</div>
+		</div>
+		
+		
+		<div class="wj-menu mobile">
+			<div class="row">
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+					<a href="index.html">
+						<span class="iconfont icon-index">
+							
+						</span>
+						<p>首页</p>
+					</a>
+				</div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+					<a href="about.html">
+						<span class="iconfont icon-wode5">
+							
+						</span>
+						<p>我们</p>
+					</a>
+				</div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+					<a href="product.html">
+						<span class="iconfont icon-huaqiangxincheng-icon-">
+							
+						</span>
+						<p>产品</p>
+					</a>
+				</div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+					<a href="tel:13580838722">
+						<span class="iconfont icon-dianhua1">
+							
+						</span>
+						<p>电话 </p>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="fh5co-loader">
+			
+		</div>
+		
+		
+	</body>
+	<!-- jquery js -->
+	<script src="bootstrap-3.3.7/js/jquery-2.1.3.min.js"></script>
+	<!-- bootstrap js -->
+	<script src="bootstrap-3.3.7/js/bootstrap.js"></script>
+	<!-- language js -->
+	<script type="text/javascript" src="js/language.js"></script>
+	<!-- index js -->
+	<script type="text/javascript" src="js/wanjia.js"></script>
+	<!--<script type="text/javascript">
+		$(function(){
+			//置顶
+			$("#zhiding").click(function(){
+				
+		        var ua = navigator.userAgent.toLocaleLowerCase();
+		        var browserType=null;
+		        var is360 = _mime("type", "application/vnd.chromium.remoting-viewer");
+		            
+		            if (isChrome() && is360) { 
+		                scrollToptimer = setInterval(function () {
+						    var top = document.body.scrollTop || document.documentElement.scrollTop;
+						    var speed = top / 4;
+						    if (document.body.scrollTop!=0) {
+						        document.body.scrollTop -= speed;
+						    }else {
+						        document.documentElement.scrollTop -= speed;
+						    }
+						    if (top == 0) {
+						        clearInterval(scrollToptimer);
+						    }
+						}, 30); 
+		           }else if(isChrome()){
+		            	$('html').animate({ scrollTop: 0 }, 500)
+		            }else{
+		            	scrollToptimer = setInterval(function () {
+						    var top = document.body.scrollTop || document.documentElement.scrollTop;
+						    var speed = top / 4;
+						    if (document.body.scrollTop!=0) {
+						        document.body.scrollTop -= speed;
+						    }else {
+						        document.documentElement.scrollTop -= speed;
+						    }
+						    if (top == 0) {
+						        clearInterval(scrollToptimer);
+						    }
+						}, 30); 
+		            }
+				 
+			})
+			function isChrome(){
+		        var ua = navigator.userAgent.toLowerCase();
+		
+		        return ua.indexOf("chrome") > 1;
+		    }
+		    //测试mime
+		    function _mime(option, value) {
+		        var mimeTypes = navigator.mimeTypes;
+		        for (var mt in mimeTypes) {
+		            if (mimeTypes[mt][option] == value) {
+		                return true;
+		            }
+		        }
+		        return false;
+		    }
+			//页面加载
+			$(".fh5co-loader").fadeOut("slow");
+			//页面特效
+			
+				
+			$(".wj-product-m>div").click(function(){
+				$(".wj-product-m a").removeClass("actived");
+				$(".wj-product-row").removeClass("active");
+				$(this).children("a").addClass("actived");
+				$(".wj-product-row").eq($(this).index()).addClass("active");
+			})
+			$(".mobile .row div").click(function(){
+				$(".mobile .row div button").removeClass("actived");
+				$(".wj-product-wj-content-f1").removeClass("active");
+				$(this).children("button").addClass("actived");
+				$(".wj-product-wj-content-f1").eq($(this).index()).addClass("active");
+			})
+
+		})
+	</script>-->
+</html>
